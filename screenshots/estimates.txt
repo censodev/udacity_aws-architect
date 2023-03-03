@@ -1,4 +1,4 @@
 Minimum RTO for a single AZ outage: depends on the time is needed to switch to a replica in another AZ ~ 2mins
 Minimum RTO for a single region outage: depends on the time is needed to restore a DB instance from the backed-up snapshot ~ 1hrs
 Minimum RPO for a single AZ outage: the data is replicated in another AZ so no data loss - 0min
-Minimum RPO for a single region outage: depends on data backing-up frequency and replicating delay time between primary DB and replica DB ~ 10mins
+Minimum RPO for a single region outage: depends on data backing-up frequency and replicating delay time between primary DB and replica DB in standby region ~ 10mins
