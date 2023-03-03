@@ -1,0 +1,39 @@
+[ec2-user@ip-10-1-11-119 ~]$ mysql mysql -u admin -p -h replica.c9ws7li3tq4q.us-west-2.rds.amazonaws.com
+Enter password: 
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 9
+Server version: 8.0.28 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [mysql]> use udacity;
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+MySQL [udacity]> select * from products;
++-----------+
+| name      |
++-----------+
+| iPhone 13 |
++-----------+
+1 row in set (0.00 sec)
+
+MySQL [udacity]> insert into products values ("S22 Ultra");
+Query OK, 1 row affected (0.00 sec)
+
+MySQL [udacity]> select * from products;
++-----------+
+| name      |
++-----------+
+| iPhone 13 |
+| S22 Ultra |
++-----------+
+2 rows in set (0.00 sec)
+
+MySQL [udacity]>
